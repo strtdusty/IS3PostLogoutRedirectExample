@@ -4,7 +4,6 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Notifications;
 using Microsoft.Owin.Security.OpenIdConnect;
 using Owin;
-using Sample;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens;
 using System.Threading.Tasks;
@@ -32,13 +31,13 @@ namespace MVC_OWIN_Client
             {
                 ClientId = "azure",
                 Authority = "http://localhost:1080/",
-                RedirectUri = "https://localhost:44301/",
+                RedirectUri = "https://localhost:44302/",
                 ResponseType = "id_token",
                 Scope = "openid email",
 
                 UseTokenLifetime = false,
                 SignInAsAuthenticationType = "Cookies",
-                PostLogoutRedirectUri= "https://localhost:44301/",
+                PostLogoutRedirectUri= "https://localhost:44302/",
                 Notifications = new OpenIdConnectAuthenticationNotifications
                 {
                     SecurityTokenValidated = SecurityTokenValidated,

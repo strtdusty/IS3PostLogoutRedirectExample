@@ -37,8 +37,8 @@ namespace IdentityServer.Configuration
                            IncludeJwtId = false,
                            AllowAccessToAllScopes = true,
                            EnableLocalLogin = false,
-                           PostLogoutRedirectUris = new List<string> { "http://localhost:9248/", "https://localhost:44301/" },
-                           RedirectUris = new List<string> { "http://localhost:9248/" ,"https://localhost:44301/"},
+                           PostLogoutRedirectUris = new List<string> { "http://localhost:9248/", "https://localhost:44302/" },
+                           RedirectUris = new List<string> { "http://localhost:9248/" ,"https://localhost:44302/"},
                            Flow = Flows.Implicit,
                            RequireConsent = false
                        }
