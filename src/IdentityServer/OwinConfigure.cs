@@ -24,7 +24,7 @@ namespace IdentityServer
                 AuthenticationType = "icad",
                 Caption = "Sign In",
                 Scope = "openid email",
-                ClientId = "7555f387-10e4-4c88-b448-eaf0ca4102f7",
+                ClientId = ,
                 Authority = "https://login.windows.net/common/",
                 PostLogoutRedirectUri = "http://localhost:1080/signoutcallback",
                 RedirectUri = "http://localhost:1080/identity/signin-icad",
